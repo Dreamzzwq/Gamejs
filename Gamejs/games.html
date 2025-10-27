@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <script>
+        const mobils = [
+            {nama: "Ferrari", kecepatan: 200, senjata: "roket"},
+            {nama: "Civic", kecepatan: 100, senjata: "laser"},
+            {nama: "Lamborgini", kecepatan: 250, senjata: "bom"}, 
+            {nama: "Brio", kecepatan: 90, senjata: "meriam"},
+            {nama: "Avanza", kecepatan: 120, senjata: "api"},
+
+        ];
+        const PilihMobil = alert(`PIlih Mobilmu:${mobils.map((mobil, index) => `\n${index + 1}. ${mobil.nama} (Kecepatan: ${mobil.kecepatan}, Senjata: ${mobil.senjata})`).join('')}`);
+        const pilihanPlayer = parseInt(prompt("Masukkan nomor mobil pilihanmu:")) - 1;
+    </script>
+</body>
+</html>
